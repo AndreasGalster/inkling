@@ -1,0 +1,271 @@
+<dom-module id='ink-flex-grid'>
+	<template>
+		<style>
+	    *[ink-grid], *[ink-grid-fw] {
+	      display: flex;
+	      flex-wrap: wrap;
+	    }
+
+			*[ink-grid-fw] {
+				width:100%;
+			}
+
+			*[ink-grid] > *, *[ink-grid-fw] > * {
+				box-sizing: border-box;
+			}
+
+	    *[ink-gap-i] > * {
+	      margin: 0 var(--gap);
+	    }
+
+	    *[ink-gap-o] {
+	      margin: 0 var(--gap);
+	    }
+
+			*[c] {
+				flex: auto;
+			}
+
+			*[o-sm-2] {
+				margin-left: calc(var(--off-2));
+			}
+
+			*[o-sm-3] {
+				margin-left: calc(var(--off-3));
+			}
+
+			*[o-sm-4] {
+				margin-left: calc(var(--off-4));
+			}
+
+			*[o-sm-6] {
+				margin-left: calc(var(--off-6));
+			}
+
+			*[o-sm-12] {
+				margin-left: calc(var(--off-12));
+			}
+
+
+	    /*--xs*/
+	    @media (min-width: 1px) {
+	      *[c-xs-2] {
+	        flex: var(--c-2-o);
+	      }
+
+	      *[c-xs-3] {
+	        flex: var(--c-3-o);
+	      }
+
+	      *[c-xs-4] {
+	        flex: var(--c-4-o);
+	      }
+
+	      *[c-xs-6] {
+	        flex: var(--c-6-o);
+	      }
+
+	      *[c-xs-12] {
+	        flex: var(--c-12-o);
+	      }
+
+
+	      *[ink-gap-i] *[c-xs-2] {
+	        flex: var(--c-2-i);
+	      }
+
+	      *[ink-gap-i] *[c-xs-3] {
+	        flex: var(--c-3-i);
+	      }
+
+	      *[ink-gap-i] *[c-xs-4] {
+	        flex: var(--c-4-i);
+	      }
+
+	      *[ink-gap-i] *[c-xs-6] {
+	        flex: var(--c-6-i);
+	      }
+
+	      *[ink-gap-i] *[c-xs-12] {
+	        flex: var(--c-12-i);
+	      }
+	    }
+
+	    /*--sm*/
+	    @media (min-width: 601px) {
+				*[c-sm-2] {
+	        flex: var(--c-2-o);
+	      }
+
+	      *[c-sm-3] {
+	        flex: var(--c-3-o);
+	      }
+
+	      *[c-sm-4] {
+	        flex: var(--c-4-o);
+	      }
+
+	      *[c-sm-6] {
+	        flex: var(--c-6-o);
+	      }
+
+	      *[c-sm-12] {
+	        flex: var(--c-12-o);
+	      }
+
+
+	      *[ink-gap-i] *[c-sm-2] {
+	        flex: var(--c-2-i);
+	      }
+
+	      *[ink-gap-i] *[c-sm-3] {
+	        flex: var(--c-3-i);
+	      }
+
+	      *[ink-gap-i] *[c-sm-4] {
+	        flex: var(--c-4-i);
+	      }
+
+	      *[ink-gap-i] *[c-sm-6] {
+	        flex: var(--c-6-i);
+	      }
+
+	      *[ink-gap-i] *[c-sm-12] {
+	        flex: var(--c-12-i);
+	      }
+	    }
+
+	    /*--md*/
+	    @media (min-width: 961px) {
+				*[c-md-2] {
+	        flex: var(--c-2-o);
+	      }
+
+	      *[c-md-3] {
+	        flex: var(--c-3-o);
+	      }
+
+	      *[c-md-4] {
+	        flex: var(--c-4-o);
+	      }
+
+	      *[c-md-6] {
+	        flex: var(--c-6-o);
+	      }
+
+	      *[c-md-12] {
+	        flex: var(--c-12-o);
+	      }
+
+
+	      *[ink-gap-i] *[c-md-2] {
+	        flex: var(--c-2-i);
+	      }
+
+	      *[ink-gap-i] *[c-md-3] {
+	        flex: var(--c-3-i);
+	      }
+
+	      *[ink-gap-i] *[c-md-4] {
+	        flex: var(--c-4-i);
+	      }
+
+	      *[ink-gap-i] *[c-md-6] {
+	        flex: var(--c-6-i);
+	      }
+
+	      *[ink-gap-i] *[c-md-12] {
+	        flex: var(--c-12-i);
+	      }
+	    }
+
+	    /*--lg*/
+	    @media (min-width: 1281px) {
+				*[c-lg-2] {
+	        flex: var(--c-2-o);
+	      }
+
+	      *[c-lg-3] {
+	        flex: var(--c-3-o);
+	      }
+
+	      *[c-lg-4] {
+	        flex: var(--c-4-o);
+	      }
+
+	      *[c-lg-6] {
+	        flex: var(--c-6-o);
+	      }
+
+	      *[c-lg-12] {
+	        flex: var(--c-12-o);
+	      }
+
+
+	      *[ink-gap-i] *[c-lg-2] {
+	        flex: var(--c-2-i);
+	      }
+
+	      *[ink-gap-i] *[c-lg-3] {
+	        flex: var(--c-3-i);
+	      }
+
+	      *[ink-gap-i] *[c-lg-4] {
+	        flex: var(--c-4-i);
+	      }
+
+	      *[ink-gap-i] *[c-lg-6] {
+	        flex: var(--c-6-i);
+	      }
+
+	      *[ink-gap-i] *[c-lg-12] {
+	        flex: var(--c-12-i);
+	      }
+	    }
+
+	    /*--xlg*/
+	    @media (min-width: 1601px) {
+				*[c-xlg-2] {
+	        flex: var(--c-2-o);
+	      }
+
+	      *[c-xlg-3] {
+	        flex: var(--c-3-o);
+	      }
+
+	      *[c-xlg-4] {
+	        flex: var(--c-4-o);
+	      }
+
+	      *[c-xlg-6] {
+	        flex: var(--c-6-o);
+	      }
+
+	      *[c-xlg-12] {
+	        flex: var(--c-12-o);
+	      }
+
+
+	      *[ink-gap-i] *[c-xlg-2] {
+	        flex: var(--c-2-i);
+	      }
+
+	      *[ink-gap-i] *[c-xlg-3] {
+	        flex: var(--c-3-i);
+	      }
+
+	      *[ink-gap-i] *[c-xlg-4] {
+	        flex: var(--c-4-i);
+	      }
+
+	      *[ink-gap-i] *[c-xlg-6] {
+	        flex: var(--c-6-i);
+	      }
+
+	      *[ink-gap-i] *[c-xlg-12] {
+	        flex: var(--c-12-i);
+	      }
+	    }
+    </style>
+	</template>
+</dom-module>

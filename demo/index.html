@@ -1,0 +1,473 @@
+<!doctype html>
+<html>
+  <head>
+    <title>inkling demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+
+    <link rel="import" href="../src/inkling.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles"></style>
+    <style is="custom-style" include="ink-variables ink-reset ink-flex-grid ink-colors ink-typography"></style>
+    <style>
+      section {
+        background: rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px !important;
+      }
+    </style>
+
+  </head>
+  <body>
+
+
+    *[ink-txt-l] { text-align: left; }
+    *[ink-txt-r] { text-align: right; }
+    *[ink-txt-c] { text-align: center; }
+    *[ink-txt-c] { text-align: center; }
+
+
+    <div class="vertical-section-container">
+      <h3>typography system, text alignments</h3>
+      <demo-snippet>
+        <template>
+          <ink-cols c4>
+            <ink-copy1 ink-txt-l>
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+            </ink-copy1>
+
+            <ink-copy1 ink-txt-r>
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+            </ink-copy1>
+
+            <ink-copy1 ink-txt-c>
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+            </ink-copy1>
+
+            <ink-copy1 ink-txt-j>
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+            </ink-copy1>
+          </ink-cols>
+        </template>
+      </demo-snippet>
+    </div>
+
+
+    <div class="vertical-section-container">
+      <h3>typography system, columns</h3>
+      <demo-snippet>
+        <template>
+          <ink-cols c2>
+            <ink-head2 ink-span>
+              Some columns for testing
+            </ink-head2>
+
+            <ink-copy1>
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+            </ink-copy1>
+          </ink-cols>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>typography system, columns</h3>
+      <demo-snippet>
+        <template>
+          <ink-cols c3>
+            <ink-head2 ink-span>
+              Some columns for testing
+            </ink-head2>
+
+            <ink-copy1>
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+            </ink-copy1>
+          </ink-cols>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>typography system, columns</h3>
+      <demo-snippet>
+        <template>
+          <ink-cols c4>
+            <ink-head2 ink-span>
+              Some columns for testing
+            </ink-head2>
+
+            <ink-copy1>
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+            </ink-copy1>
+          </ink-cols>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>typography system, columns</h3>
+      <demo-snippet>
+        <template>
+          <ink-cols c5>
+            <ink-head2 ink-span>
+              Some columns for testing
+            </ink-head2>
+
+            <ink-copy1>
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+            </ink-copy1>
+          </ink-cols>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>typography system, columns</h3>
+      <demo-snippet>
+        <template>
+          <ink-cols c6>
+            <ink-head2 ink-span>
+              Some columns for testing
+            </ink-head2>
+
+            <ink-copy1>
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+
+              Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+            </ink-copy1>
+          </ink-cols>
+        </template>
+      </demo-snippet>
+    </div>
+
+
+
+
+    <div class="vertical-section-container">
+      <h3>typography system, hero headline</h3>
+      <demo-snippet>
+        <template>
+          <ink-hero1>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-hero1>
+          <ink-hero2>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-hero2>
+          <ink-hero3>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-hero3>
+          <ink-hero4>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-hero4>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>typography system, standard headline</h3>
+      <demo-snippet>
+        <template>
+          <ink-head1>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-head1>
+          <ink-head2>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-head2>
+          <ink-head3>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-head3>
+          <ink-head4>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-head4>
+          <ink-head5>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-h5>
+          <ink-h6>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-h6>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>typography system, standard copy</h3>
+      <demo-snippet>
+        <template>
+          <ink-copy1>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-copy1>
+          <ink-copy2>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-copy2>
+          <ink-copy3>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-copy3>
+          <ink-copy4>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-copy4>
+          <ink-copy5>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-copy5>
+          <ink-copy6>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-copy6>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>typography system, micro text</h3>
+      <demo-snippet>
+        <template>
+          <ink-micro1>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-micro1>
+          <ink-micro2>The quick brown vulpix jumps over the lazy snorlax and chases a wild pikachu</ink-micro2>
+        </template>
+      </demo-snippet>
+
+
+      <demo-snippet>
+        <template>
+          <ink-micro1>
+            Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+          </ink-micro1>
+
+          <ink-micro1>
+            Charizard Johto Cacnea Slaking Jolteon Skuntank Rotom. Sed do eiusmod tempor incididunt Dialga Pidgeot Jirachi Junichi Masuda Minun Herdier. Celadon City Stunky Poison Sting Vileplume Ponyta Leech Seed Bibarel. Volcano Badge Aerodactyl Tranquill Bastiodon Exeggutor Tail Whip Flaaffy. Blue Plusle they're comfy and easy to wear Elekid Monferno Dunsparce Lombre.
+          </ink-micro1>
+
+          <ink-micro1>
+            Sand-Attack gym Missingno Gothorita Exeggutor Growl Druddigon. Pallet Town to extend our reach to the stars above Remoraid Lotad Typhlosion to catch them is my real test Flareon. Ruby Team Rocket Meowth Seadra Dragonair Klinklang Smeargle. Pikachu Exploud Magnemite Ducklett Munchlax Psyduck Victini. Gotta catch 'em all Thundershock Rising Badge Poke Flute The Power Of One Hippowdon Dratini.
+          </ink-micro1>
+        </template>
+      </demo-snippet>
+
+      <demo-snippet>
+        <template>
+          <ink-micro2>
+            Pokem ipsum dolor sit amet Kadabra Delibird Lanturn Wooper Red Dome Fossil. Sapphire Blastoise Rotom you teach me and I'll teach you Liepard Wigglytuff Flareon. Velit esse cillum dolore eu fugiat nulla pariatur Rhyhorn to extend our reach to the stars above Braviary Seaking Darmanitan Kyurem. Psychic Durant Magikarp used Splash Nincada Strength Swoobat Bill. Poison Sting et dolore magna aliqua Manaphy Uxie Glalie Rotom Carvanha.
+          </ink-micro2>
+
+          <ink-micro2>
+            Charizard Johto Cacnea Slaking Jolteon Skuntank Rotom. Sed do eiusmod tempor incididunt Dialga Pidgeot Jirachi Junichi Masuda Minun Herdier. Celadon City Stunky Poison Sting Vileplume Ponyta Leech Seed Bibarel. Volcano Badge Aerodactyl Tranquill Bastiodon Exeggutor Tail Whip Flaaffy. Blue Plusle they're comfy and easy to wear Elekid Monferno Dunsparce Lombre.
+          </ink-micro2>
+
+          <ink-micro2>
+            Sand-Attack gym Missingno Gothorita Exeggutor Growl Druddigon. Pallet Town to extend our reach to the stars above Remoraid Lotad Typhlosion to catch them is my real test Flareon. Ruby Team Rocket Meowth Seadra Dragonair Klinklang Smeargle. Pikachu Exploud Magnemite Ducklett Munchlax Psyduck Victini. Gotta catch 'em all Thundershock Rising Badge Poke Flute The Power Of One Hippowdon Dratini.
+          </ink-micro2>
+        </template>
+      </demo-snippet>
+    </div>
+
+
+    <div class="vertical-section-container">
+      <h3>typography system, anchor text</h3>
+      <demo-snippet>
+        <template>
+          <ink-copy1>The quick <a href='#'>brown vulpix</a> jumps over the lazy snorlax and chases a wild pikachu</ink-copy1>
+          <ink-copy2>The quick <a href='#'>brown vulpix</a> jumps over the lazy snorlax and chases a wild pikachu</ink-copy2>
+          <ink-copy2>The quick <a href='#'>brown vulpix</a> jumps over the lazy snorlax and chases a wild pikachu</ink-copy2>
+        </template>
+      </demo-snippet>
+
+
+
+
+
+    <div class="vertical-section-container">
+      <h3>grid auto flex</h3>
+      <demo-snippet>
+        <template>
+          <div ink-grid>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+          </div>
+        </template>
+      </demo-snippet>
+    </div>
+
+
+    <div class="vertical-section-container">
+      <h3>grid outer gap</h3>
+      <demo-snippet>
+        <template>
+          <div ink-grid ink-gap-o>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+          </div>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>grid inner gap</h3>
+      <demo-snippet>
+        <template>
+          <div ink-grid ink-gap-i>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+          </div>
+        </template>
+      </demo-snippet>
+    </div>
+
+
+    <div class="vertical-section-container">
+      <h3>grid inner &amp; outer gap</h3>
+      <demo-snippet>
+        <template>
+          <div ink-grid ink-gap-o ink-gap-i>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+            <section c></section>
+          </div>
+        </template>
+      </demo-snippet>
+    </div>
+
+
+
+
+    <div class="vertical-section-container">
+      <h3>grid responsive columns</h3>
+      <demo-snippet>
+        <template>
+          <div ink-grid ink-gap-o ink-gap-i>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+          </div>
+
+          <div ink-grid ink-gap-i>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+            <section c-xs-12 c-sm-3 c-md-4></section>
+          </div>
+        </template>
+      </demo-snippet>
+    </div>
+
+<!--
+    <div class="vertical-section-container">
+      <h3>grid responsive columns with offset</h3>
+      <demo-snippet>
+        <template>
+
+          <div ink-grid>
+            <section
+              c-xs-12
+              c-sm-3 o-sm-3
+              c-md-4 o-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+          </div>
+
+          <div ink-grid ink-gap-o ink-gap-i>
+            <section
+              c-xs-12
+              c-sm-3 o-sm-3
+              c-md-4 o-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+          </div>
+
+          <div ink-grid ink-gap-i>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+            <section
+              c-xs-12
+              c-sm-3
+              c-md-4>
+            </section>
+          </div>
+
+        </template>
+      </demo-snippet>
+    </div>
+ -->
+
+
+  </body>
+</html>
