@@ -32,6 +32,26 @@
 				--mix-pd-xxlg: {
 					padding: var(--pd-xxlg);
 				};
+
+
+
+				--mix-tblr: {
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+				};
+
+				--mix-fixed-view: {
+					position: fixed;
+					@apply(--mix-tblr);
+					overflow-y: scroll;
+				};
+
+				--mix-absolute-view: {
+					position: absolute;
+					@apply(--mix-tblr);
+				};
 			}
 
 			*[pd-xs] {
@@ -61,23 +81,6 @@
 
 
 
-			--mix-tblr: {
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			};
-
-			--mix-fixed-view: {
-				position: fixed;
-				@apply(--mix-tblr);
-				overflow-y: scroll;
-			};
-
-			--mix-absolute-view: {
-				position: absolute;
-				@apply(--mix-tblr);
-			};
 
     </style>
 	</template>
