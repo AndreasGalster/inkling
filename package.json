@@ -1,6 +1,6 @@
 {
   "name": "@andreasgalster/inkling",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "inkling is a set of basic shared styles, similar to bootstrap",
   "main": "inkling.html",
   "scripts": {
