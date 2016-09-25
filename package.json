@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/AndreasGalster/inkling#readme",
   "dependencies": {
-    "@polymer/polymer": "^1.2.5-npm-test.2"
+    "@polymer/polymer": "^1.2.5-npm-test.2",
+    "Stickyfill": "git+https://github.com/wilddeer/stickyfill.git"
   },
   "devDependencies": {
     "@polymer/iron-component-page": "^0.0.3",
