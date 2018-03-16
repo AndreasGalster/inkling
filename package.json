@@ -1,6 +1,6 @@
 {
   "name": "@andreas-galster/inkling",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "js styles for lit-html",
   "main": "index.js",
   "repository": {
