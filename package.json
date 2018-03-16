@@ -1,9 +1,19 @@
 {
-  "name": "inkling",
+  "name": "@andreas-galster/inkling",
   "version": "0.2.3",
   "description": "js styles for lit-html",
   "main": "index.js",
-  "repository": "git@github.com:AndreasGalster/inkling.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AndreasGalster/inkling.git"
+  },
   "author": "Andreas Galster <andreas@product.cafe>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndreasGalster/inkling/issues"
+  },
+  "homepage": "https://github.com/AndreasGalster/inkling#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
