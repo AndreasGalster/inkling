@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js publish --access public
+
+PATH: 
+  /home/andreas/bin:/home/andreas/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files (x86)/Intel/iCLS Client:/mnt/c/Program Files/Intel/iCLS Client:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/WiFi/bin:/mnt/c/Program Files/Common Files/Intel/WirelessCommon:/mnt/c/Users/andre/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Microsoft VS Code/bin:/snap/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.8.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "@andreasgalster/lit-inkling",
+    "version": "0.1.0",
+    "description": "inkling is a set of basic shared styles, similar to bootstrap",
+    "main": "inkling.js",
+    "repository": "git+https://github.com/AndreasGalster/inkling.git",
+    "keywords": [
+      "web-components",
+      "polymer",
+      "lit-html",
+      "lit-element",
+      "css framework"
+    ],
+    "author": "Andreas Galster <andreas@product.cafe>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/AndreasGalster/inkling/issues"
+    },
+    "homepage": "https://github.com/AndreasGalster/inkling#readme",
+    "dependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:128791:13)
+      at Interface.emit (events.js:180:13)
+      at Interface._ttyWrite (readline.js:783:16)
+      at ReadStream.onkeypress (readline.js:163:10)
+      at ReadStream.emit (events.js:180:13)
+      at emitKeys (internal/readline.js:420:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1019:36)
+      at ReadStream.emit (events.js:180:13)
+      at addChunk (_stream_readable.js:269:12)
