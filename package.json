@@ -1,21 +1,9 @@
 {
-  "name": "@andreasgalster/lit-inkling",
-  "version": "0.1.6",
-  "description": "inkling is a set of basic shared styles, similar to bootstrap",
-  "main": "inkling.js",
-  "repository": "git+https://github.com/AndreasGalster/inkling.git",
-  "keywords": [
-    "web-components",
-    "polymer",
-    "lit-html",
-    "lit-element",
-    "css framework"
-  ],
+  "name": "inkling",
+  "version": "0.0.2",
+  "description": "inkling is a set of shared styles for js-based webcomponents similar to bootstrap but with modern approach",
+  "main": "index.js",
+  "repository": "git@github.com:AndreasGalster/inkling.git",
   "author": "Andreas Galster <andreas@product.cafe>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AndreasGalster/inkling/issues"
-  },
-  "homepage": "https://github.com/AndreasGalster/inkling#readme",
-  "dependencies": {}
+  "license": "MIT"
 }
