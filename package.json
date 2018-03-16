@@ -1,12 +1,9 @@
 {
   "name": "@andreasgalster/inkling",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "inkling is a set of basic shared styles, similar to bootstrap",
   "main": "inkling.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AndreasGalster/inkling.git"
-  },
+  "repository": "git+https://github.com/AndreasGalster/inkling.git",
   "keywords": [
     "web-components",
     "polymer",
@@ -17,7 +14,7 @@
   "author": "Andreas Galster <andreas@product.cafe>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/startup-boilerplate-co/inkling/issues"
+    "url": "https://github.com/AndreasGalster/inkling/issues"
   },
-  "homepage": "https://github.com/startup-boilerplate-co/inkling#readme"
+  "homepage": "https://github.com/AndreasGalster/inkling#readme"
 }
