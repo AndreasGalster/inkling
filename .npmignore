@@ -1,2 +1,6 @@
 src
 gulpfile.js
+assets
+bower_components
+demo
+node_modules
