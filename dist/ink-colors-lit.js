@@ -1,17 +1,8 @@
 import { html } from 'lit-html/lib/lit-extended.js';
 
 export const inkColors = html`
-  <style>
+  	<style>
 	    :host {
-				--primary:						#1177f3;
-				--primary-light:			lightblue;
-				--secondary:					orange;
-
-
-				--primary:						#1177f3;
-				--primary-light:			lightblue;
-				--secondary:					orange;
-
 				--g10: hsl(360, 0%, 10%);
 				--g20: hsl(360, 0%, 20%);
 				--g30: hsl(360, 0%, 30%);
@@ -24,18 +15,6 @@ export const inkColors = html`
 				--g95: hsl(360, 0%, 95%);
 				--g97: hsl(360, 0%, 97%);
 				--g100: hsl(360, 0%, 100%);
-
-
-				/*--g10: #111;
-				--g10: #111;
-				--g10: #111;
-				--g10: #111;
-				--g10: #111;
-				--g10: #111;
-				--g10: #111;
-				--g10: #111;
-				--g10: #111;
-				--g10: #111;*/
 			}
 	</style>
 `;

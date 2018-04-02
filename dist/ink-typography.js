@@ -3,8 +3,10 @@
 //				}
 
 import { html } from '@polymer/polymer/polymer-element.js';
+import {htmlLiteral} from '@polymer/polymer/lib/utils/html-tag';
 
-export const inkTypography = html`
+
+export const inkTypography = htmlLiteral`
   <style>
 			ink-hero1, ink-hero2, ink-hero3, ink-hero4,
 			ink-head1, ink-head2, ink-head3, ink-head4, ink-head5, ink-head6,

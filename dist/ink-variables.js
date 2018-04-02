@@ -1,6 +1,8 @@
 import { html } from '@polymer/polymer/polymer-element.js';
+import {htmlLiteral} from '@polymer/polymer/lib/utils/html-tag';
 
-export const inkVariables = html`
+
+export const inkVariables = htmlLiteral`
   <style>
 	    :host {
 				/* colors */

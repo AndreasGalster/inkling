@@ -9,8 +9,10 @@ document.head.appendChild($_inkDefaultFonts);
 
 
 import { html } from '@polymer/polymer/polymer-element.js';
+import {htmlLiteral} from '@polymer/polymer/lib/utils/html-tag';
 
-export const inkThemeDefaults = html`
+
+export const inkThemeDefaults = htmlLiteral`
     <style>
 			:host {
 				--primary:						#0073e3;

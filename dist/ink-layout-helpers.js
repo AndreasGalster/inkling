@@ -1,17 +1,19 @@
 // import { html } from 'lit-html/lib/lit-extended.js';
 import { html } from '@polymer/polymer/polymer-element.js';
+import {htmlLiteral} from '@polymer/polymer/lib/utils/html-tag';
+
 
 var radiusSizes = [
-	'xxs',
-  'xs',
-	'sm',
-	'md',
-	'lg'
+	htmlLiteral`xxs`,
+  htmlLiteral`xs`,
+	htmlLiteral`sm`,
+	htmlLiteral`md`,
+	htmlLiteral`lg`
 ];
 
-var radiusAll = html``;
+var radiusAll = htmlLiteral``;
 radiusSizes.map((size) => {
-  radiusAll = radiusAll + `
+  radiusAll = htmlLiteral`${radiusAll}
     --rd-all-${size}: { border-radius: var(--rd-${size}); }
   `;
 });
@@ -21,90 +23,90 @@ radiusSizes.map((size) => {
 
 
 var sizes = [
-  '50',
-  'xxs',
-  'xs',
-  'sm',
-  'md',
-  'lg',
-  'xlg',
-  'xxlg',
-  'xxxlg'
+	htmlLiteral`50`,
+	htmlLiteral`xxs`,
+	htmlLiteral`xs`,
+	htmlLiteral`sm`,
+	htmlLiteral`md`,
+	htmlLiteral`lg`,
+	htmlLiteral`xlg`,
+	htmlLiteral`xxlg`,
+	htmlLiteral`xxxlg`
 ];
 
-var marginAll = html``;
+var marginAll = htmlLiteral``;
 sizes.map((size) => {
-  marginAll = marginAll + `
+  marginAll = htmlLiteral`${marginAll}
     --m-all-${size}: { margin: var(--size-${size}); }
   `;
 });
 
-var marginTop = html``;
+var marginTop = htmlLiteral``;
 sizes.map((size) => {
-  marginTop = marginTop + `
+  marginTop = htmlLiteral`${marginTop}
     --m-top-${size}: { margin-top: var(--size-${size}); }
   `;
 });
 
-var marginBot = html``;
+var marginBot = htmlLiteral``;
 sizes.map((size) => {
-  marginBot = marginBot + `
+  marginBot = htmlLiteral`${marginBot}
     --m-bot-${size}: { margin-bottom: var(--size-${size}); }
   `;
 });
 
-var marginLeft = html``;
+var marginLeft = htmlLiteral``;
 sizes.map((size) => {
-  marginLeft = marginLeft + `
+  marginLeft = htmlLiteral`${marginLeft}
     --m-left-${size}: { margin-left: var(--size-${size}); }
   `;
 });
 
-var marginRight = html``;
+var marginRight = htmlLiteral``;
 sizes.map((size) => {
-  marginRight = marginRight + `
+  marginRight = htmlLiteral`${marginRight}
     --m-right-${size}: { margin-right: var(--size-${size}); }
   `;
 });
 
 
 
-var paddingAll = html``;
+var paddingAll = htmlLiteral``;
 sizes.map((size) => {
-  paddingAll = paddingAll + `
+  paddingAll = htmlLiteral`${paddingAll} 
     --pd-all-${size}: { padding: var(--size-${size}); }
   `;
 });
 
-var paddingTop = html``;
+var paddingTop = htmlLiteral``;
 sizes.map((size) => {
-  paddingTop = paddingTop + `
+  paddingTop = htmlLiteral`${paddingTop}
     --pd-top-${size}: { padding-top: var(--size-${size}); }
   `;
 });
 
-var paddingBot = html``;
+var paddingBot = htmlLiteral``;
 sizes.map((size) => {
-  paddingBot = paddingBot + `
+  paddingBot = htmlLiteral`${paddingBot}
     --pd-bottom-${size}: { padding-bottom: var(--size-${size}); }
   `;
 });
 
-var paddingLeft = html``;
+var paddingLeft = htmlLiteral``;
 sizes.map((size) => {
-  paddingLeft = paddingLeft + `
+  paddingLeft = htmlLiteral`${paddingLeft}
     --pd-left-${size}: { padding-left: var(--size-${size}); }
   `;
 });
 
-var paddingRight = html``;
+var paddingRight = htmlLiteral``;
 sizes.map((size) => {
-  paddingRight = paddingRight + `
+  paddingRight = htmlLiteral`${paddingRight}
     --pd-right-${size}: { padding-right: var(--size-${size}); }
   `;
 });
 
-export const inkLayoutHelpers = html`
+export const inkLayoutHelpers = htmlLiteral`
     <style>
 		    :host {
 					--fixed-top: {
@@ -212,18 +214,18 @@ export const inkLayoutHelpers = html`
 					}
 
 					${marginAll}
-          ${marginTop}
-          ${marginBot}
-          ${marginLeft}
-          ${marginRight}
+					${marginTop}
+					${marginBot}
+					${marginLeft}
+					${marginRight}
 
-          ${paddingAll}
-          ${paddingTop}
-          ${paddingBot}
-          ${paddingLeft}
-          ${paddingRight}
+					${paddingAll}
+					${paddingTop}
+					${paddingBot}
+					${paddingLeft}
+					${paddingRight}
 
-          ${radiusAll}
+					${radiusAll}
 
 
 				}

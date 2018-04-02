@@ -1,6 +1,8 @@
 import { html } from '@polymer/polymer/polymer-element.js';
+import {htmlLiteral} from '@polymer/polymer/lib/utils/html-tag';
 
-export const inkReset = html`
+
+export const inkReset = htmlLiteral`
   <style>
 		/* Change the default font family in all browsers */
 		html {

@@ -1,104 +1,123 @@
 import { html } from '@polymer/polymer/polymer-element.js';
+import {htmlLiteral} from '@polymer/polymer/lib/utils/html-tag';
+
+var number = [
+  htmlLiteral`1`,
+  htmlLiteral`2`,
+  htmlLiteral`3`,
+  htmlLiteral`4`,
+  htmlLiteral`5`,
+  htmlLiteral`6`,
+  htmlLiteral`7`,
+  htmlLiteral`8`,
+  htmlLiteral`9`,
+  htmlLiteral`10`,
+  htmlLiteral`11`,
+  htmlLiteral`12`          
+];
 
 
-var xs = html``;
-for (var i = 1; i < 13; i++) {
-  xs = xs + `
-    *[c-xs-${i}] {
-      flex: var(--c-${i}-o);
+var xs = htmlLiteral``;
+number.map((number) => {
+  xs = htmlLiteral`${xs}
+    *[c-xs-${number}] {
+      flex: var(--c-${number}-o);
     }
   `;
-}
+});
 
-var xsGapInside = html``;
-for (var i = 1; i < 13; i++) {
-  xsGapInside = xsGapInside + `
-    *[ink-gap-i] *[c-xs-${i}] {
-      flex: var(--c-${i}-i);
+var xsGapInside = htmlLiteral``;
+number.map((number) => {
+  xsGapInside = htmlLiteral`${xsGapInside}
+    *[ink-gap-i] *[c-xs-${number}] {
+      flex: var(--c-${number}-i);
     }
   `;
-}
+});
 
 
 
 
-var sm = html``;
-for (var i = 1; i < 13; i++) {
-  sm = sm + `
-    *[c-sm-${i}] {
-      flex: var(--c-${i}-o);
+var sm = htmlLiteral``;
+number.map((number) => {
+  sm = htmlLiteral`${sm}
+    *[c-sm-${number}] {
+      flex: var(--c-${number}-o);
     }
   `;
-}
+});
 
-var smGapInside = html``;
-for (var i = 1; i < 13; i++) {
-  smGapInside = smGapInside + `
-    *[ink-gap-i] *[c-sm-${i}] {
-      flex: var(--c-${i}-i);
+var smGapInside = htmlLiteral``;
+number.map((number) => {
+  smGapInside = htmlLiteral`${smGapInside}
+    *[ink-gap-i] *[c-sm-${number}] {
+      flex: var(--c-${number}-i);
     }
   `;
-}
+});
 
 
-var md = html``;
-for (var i = 1; i < 13; i++) {
-  md = md + `
-    *[c-md-${i}] {
-      flex: var(--c-${i}-o);
+var md = htmlLiteral``;
+number.map((number) => {
+  md = htmlLiteral`${md}
+    *[c-md-${number}] {
+      flex: var(--c-${number}-o);
     }
   `;
-}
+});
 
-var mdGapInside = html``;
-for (var i = 1; i < 13; i++) {
-  mdGapInside = mdGapInside + `
-    *[ink-gap-i] *[c-md-${i}] {
-      flex: var(--c-${i}-i);
+var mdGapInside = htmlLiteral``;
+number.map((number) => {
+  mdGapInside = htmlLiteral`${mdGapInside}
+    *[ink-gap-i] *[c-md-${number}] {
+      flex: var(--c-${number}-i);
     }
   `;
-}
+});
 
 
-var lg = html``;
-for (var i = 1; i < 13; i++) {
-  lg = lg + `
-    *[c-lg-${i}] {
-      flex: var(--c-${i}-o);
+var lg = htmlLiteral``;
+number.map((number) => {
+  lg = htmlLiteral`${lg}
+    *[c-lg-${number}] {
+      flex: var(--c-${number}-o);
     }
   `;
-}
+});
 
-var lgGapInside = html``;
-for (var i = 1; i < 13; i++) {
-  lgGapInside = lgGapInside + `
-    *[ink-gap-i] *[c-lg-${i}] {
-      flex: var(--c-${i}-i);
+var lgGapInside = htmlLiteral``;
+number.map((number) => {
+  lgGapInside = htmlLiteral`${lgGapInside}
+    *[ink-gap-i] *[c-lg-${number}] {
+      flex: var(--c-${number}-i);
     }
   `;
-}
+});
 
 
-var xlg = html``;
-for (var i = 1; i < 13; i++) {
-  xlg = xlg + `
-    *[c-xlg-${i}] {
-      flex: var(--c-${i}-o);
+var xlg = htmlLiteral``;
+number.map((number) => {
+  xlg = htmlLiteral`${xlg}
+    *[c-xlg-${number}] {
+      flex: var(--c-${number}-o);
     }
   `;
-}
+});
 
-var xlgGapInside = html``;
-for (var i = 1; i < 13; i++) {
-  xlgGapInside = xlgGapInside + `
-    *[ink-gap-i] *[c-xlg-${i}] {
-      flex: var(--c-${i}-i);
+
+
+
+var xlgGapInside = htmlLiteral``;
+number.map((number) => {
+  xlgGapInside = htmlLiteral`${xlgGapInside}
+    *[ink-gap-i] *[c-xlg-${number}] {
+      flex: var(--c-${number}-i);
     }
   `;
-}
+});
 
 
-export const inkFlexGrid = html`
+export const inkFlexGrid = htmlLiteral`
   <style>
 	    *[ink-grid], *[ink-grid-fw] {
 	      display: flex;

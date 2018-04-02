@@ -1,6 +1,6 @@
-import { html } from '@polymer/polymer/polymer-element.js';
+import {htmlLiteral} from '@polymer/polymer/lib/utils/html-tag';
 
-export const inkColors = html`
+export const inkColors = htmlLiteral`
   <style>
 	    :host {
 				--primary:						#1177f3;

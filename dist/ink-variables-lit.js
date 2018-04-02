@@ -3,13 +3,6 @@ import { html } from 'lit-html/lib/lit-extended.js';
 export const inkVariables = html`
   <style>
 	    :host {
-				/* colors */
-				--primary:						#1177f3;
-				--primary-light:			lightblue;
-				--secondary:					orange;
-
-
-
 				/* typography */
 				--font-size-base: 16px;
 
@@ -19,22 +12,6 @@ export const inkVariables = html`
 				--font-size4:               1.5rem;
 				--font-size5:               1.25rem;
 				--font-size6:               1rem;
-
-				/*
-				--font-size6:               2rem;
-				--font-size6:               1.9rem;
-				--font-size6:               1.8rem;
-				--font-size6:               1.7rem;
-				--font-size6:               1.6rem;
-				--font-size6:               1.5rem;
-				--font-size6:               1.4rem;
-				--font-size6:               1.3rem;
-				--font-size1-2:               1.2rem;
-				--font-size1-1:               1.1rem;
-				--font-size1-0:               1rem;
-				*/
-
-
 
 
 				--font-xlg:			2.75;
@@ -94,11 +71,17 @@ export const inkVariables = html`
 				--c-11-i:			0 0 calc( var(--c-11) - (var(--gap)*2) );
 				--c-12-i:			0 0 calc( var(--c-12) - (var(--gap)*2) );
 
+				--off-1:			var(--c-1);
 				--off-2:			var(--c-2);
 				--off-3:			var(--c-3);
 				--off-4:			var(--c-4);
+				--off-5:			var(--c-5);
 				--off-6:			var(--c-6);
+				--off-7:			var(--c-7);
 				--off-8:			var(--c-8);
+				--off-9:			var(--c-9);
+				--off-10:			var(--c-10);
+				--off-11:			var(--c-11);								
 				--off-12:			var(--c-12);
 			}
 	</style>
