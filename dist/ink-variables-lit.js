@@ -2,7 +2,7 @@ import { html } from 'lit-html/lib/lit-extended.js';
 
 export const inkVariables = html`
   <style>
-	    :host {
+	    :host, :root {
 				/* typography */
 				--font-size-base: 16px;
 

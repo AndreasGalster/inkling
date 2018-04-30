@@ -81,7 +81,7 @@ sizes.map((size) => {
 
 export const inkLayoutHelpers = html`
     <style>
-		    :host {
+		    :host, :root {
 					--brd-g10: { border: 1px solid var(--g10); }
 					--brd-g20: { border: 1px solid var(--g20); }
 					--brd-g30: { border: 1px solid var(--g30); }

@@ -2,7 +2,7 @@ import { html } from 'lit-html/lib/lit-extended.js';
 
 export const inkColors = html`
   	<style>
-	    :host {
+	    :root, :host {
 				--g10: hsl(360, 0%, 10%);
 				--g20: hsl(360, 0%, 20%);
 				--g30: hsl(360, 0%, 30%);

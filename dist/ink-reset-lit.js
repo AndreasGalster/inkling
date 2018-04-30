@@ -58,5 +58,9 @@ export const inkReset = html`
 		  font-family: monospace, monospace; /*1*/
 		  font-size: 1em; /*2*/
 		}
+
+		h1, h2, h3, h4, h5, h6, p {
+			margin: 0;
+		}
 	</style>
 `;

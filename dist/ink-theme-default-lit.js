@@ -4,7 +4,7 @@ export const inkThemeDefaults = html`
 	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i' crossorigin='anonymous'>
 
   <style>
-		:host {
+		:host, :root {
 			--primary:						#0073e3;
 			--primary-dark-blue:	#005FC9;			
 			--primary-dark:				#122E4A;
