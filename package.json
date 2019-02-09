@@ -2,7 +2,7 @@
   "name": "@andreas-galster/inkling",
   "version": "0.2.8",
   "description": "js styles for lit-html",
-  "main": "index.js",
+  "main": "dist/inkling-lit.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/AndreasGalster/inkling.git"
