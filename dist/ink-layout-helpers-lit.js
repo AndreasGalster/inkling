@@ -1,82 +1,105 @@
-import { html } from 'lit-html/lib/lit-extended.js';
+import { html, css } from "lit-element";
+
+
+var borders = [
+	css`g10`,
+	css`g20`,
+	css`g30`,
+	css`g40`,
+	css`g50`,
+	css`g60`,
+	css`g70`,
+	css`g80`,
+	css`g90`,
+	css`g95`,
+	css`g97`,
+	css`g100`									
+];
+
+var border = {};
+borders.map((b) => {
+  border[b] = css`border-radius: var(--rd-${b});`;
+});
+
+
 
 var radiusSizes = [
-	'xxs',
-  'xs',
-	'sm',
-	'md',
-	'lg'
+	css`xxs`,
+	css`xs`,
+	css`sm`,
+	css`md`,
+	css`lg`
 ];
 
 var radiusAll = {};
 radiusSizes.map((size) => {
-  radiusAll[size] = `border-radius: var(--rd-${size});`;
+  radiusAll[size] = css`border-radius: var(--rd-${size});`;
 });
 
 
 
 var sizes = [
-  '50',
-  'xxs',
-  'xs',
-  'sm',
-  'md',
-  'lg',
-  'xlg',
-  'xxlg',
-  'xxxlg'
+	css`50`,
+	css`xxs`,
+	css`xs`,
+	css`sm`,
+	css`md`,
+	css`lg`,
+	css`xlg`,
+	css`xxlg`,
+	css`xxxlg`
 ];
 
 var marginAll = {};
 sizes.map((size) => {
-  marginAll[size] = `margin: var(--size-${size});`;
+  marginAll[size] = css`margin: var(--size-${size});`;
 });
 
 var marginTop = {};
 sizes.map((size) => {
-  marginTop[size] = `margin-top: var(--size-${size});`;
+  marginTop[size] = css`margin-top: var(--size-${size});`;
 });
 
 var marginBot = {};
 sizes.map((size) => {
-  marginBot[size] = `margin-bottom: var(--size-${size});`;
+  marginBot[size] = css`margin-bottom: var(--size-${size});`;
 });
 
 var marginLeft = {};
 sizes.map((size) => {
-  marginLeft[size] = `margin-left: var(--size-${size});`;
+  marginLeft[size] = css`margin-left: var(--size-${size});`;
 });
 
 var marginRight = {};
 sizes.map((size) => {
-  marginRight[size] = `margin-right: var(--size-${size});`;
+  marginRight[size] = css`margin-right: var(--size-${size});`;
 });
 
 
 
 var paddingAll = {};
 sizes.map((size) => {
-  paddingAll[size] = `padding: var(--size-${size});`;
+  paddingAll[size] = css`padding: var(--size-${size});`;
 });
 
 var paddingTop = {};
 sizes.map((size) => {
-  paddingTop[size] = `padding-top: var(--size-${size});`;
+  paddingTop[size] = css`padding-top: var(--size-${size});`;
 });
 
 var paddingBot = {};
 sizes.map((size) => {
-  paddingBot[size] = `padding-bottom: var(--size-${size});`;
+  paddingBot[size] = css`padding-bottom: var(--size-${size});`;
 });
 
 var paddingLeft = {};
 sizes.map((size) => {
-  paddingLeft = `padding-left: var(--size-${size});`;
+  paddingLeft = css`padding-left: var(--size-${size});`;
 });
 
 var paddingRight = {};
 sizes.map((size) => {
-  paddingRight[size] = `padding-right: var(--size-${size});`;
+  paddingRight[size] = css`padding-right: var(--size-${size});`;
 });
 
 export const inkLayoutHelpers = html`
@@ -179,32 +202,32 @@ export const inkLayoutHelpers = html`
 
 
 
-const trbl = `
+const trbl = css`
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 `;
 
-const fixedTop = `
+const fixedTop = css`
 	${trbl}
 	position: fixed;
 	bottom: auto;
 `;
 
 
-const fixedView = `
+const fixedView = css`
 	${trbl}
 	position: fixed;
 	overflow-y: scroll;
 `;
 
-const relativeView = `
+const relativeView = css`
 	position: relative;
 	display: block;
 `;
 
-const absoluteView = `
+const absoluteView = css`
 	${trbl}
 	position: absolute;
 	overflow-y: scroll;
@@ -217,33 +240,33 @@ const absoluteView = `
 
 
 
-const flx = `
+const flx = css`
 	display: flex;
 `;
 
-const flxVert = `
+const flxVert = css`
 	flex-direction: column;
 `;
 
-const flxGrow = `
+const flxGrow = css`
 	flex-grow: 1;
 `;
 
-const flxCtr = `
+const flxCtr = css`
 	align-items: center;
 `;
 
-const flxCtrJustified = `
+const flxCtrJustified = css`
 	justify-content: center;
 `;
 
-const flxCtrCtr = `
+const flxCtrCtr = css`
 	${flx}
 	${flxCtr}
 	${flxCtrJustified}
 `;
 
-const inFlx = `
+const inFlx = css`
 	display: inline-flex;
 `;
 
@@ -252,6 +275,7 @@ const inFlx = `
 export {marginAll, marginTop, marginBot, marginLeft, marginRight} 
 export {paddingAll, paddingTop, paddingBot, paddingLeft, paddingRight}
 export {radiusAll}
+export {border}
 
 export {trbl, fixedTop, fixedView, relativeView, absoluteView};
 export {flx, flxVert, flxGrow, flxCtr, flxCtrJustified, flxCtrCtr, inFlx};

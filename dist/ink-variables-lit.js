@@ -3,6 +3,24 @@ import { html } from 'lit-html/lib/lit-extended.js';
 export const inkVariables = html`
   <style>
 	    :host, :root {
+			--rd-xxs: 1px;
+					--rd-xs: 2px;
+					--rd-sm: 3px;
+					--rd-md: 5px;
+					--rd-lg: 8px;
+
+					--size-xxs: 3px;
+					--size-xs: 5px;
+					--size-sm: 10px;
+					--size-md: 15px;
+					--size-lg: 25px;
+					--size-xlg: 35px;
+					--size-xxlg: 50px;
+					--size-xxxlg: 90px;
+					--size-50: 50%;
+
+
+
 				/* typography */
 				--font-size-base: 16px;
 
