@@ -1,105 +1,105 @@
-import { html, css } from "lit-element";
+import { html,  } from "lit-element";
 
 
 var borders = [
-	css`g10`,
-	css`g20`,
-	css`g30`,
-	css`g40`,
-	css`g50`,
-	css`g60`,
-	css`g70`,
-	css`g80`,
-	css`g90`,
-	css`g95`,
-	css`g97`,
-	css`g100`									
+	`g10`,
+	`g20`,
+	`g30`,
+	`g40`,
+	`g50`,
+	`g60`,
+	`g70`,
+	`g80`,
+	`g90`,
+	`g95`,
+	`g97`,
+	`g100`									
 ];
 
 var border = {};
 borders.map((b) => {
-  border[b] = css`border-radius: var(--rd-${b});`;
+  border[b] = `border: 1px solid var(--${b});`;
 });
 
 
 
 var radiusSizes = [
-	css`xxs`,
-	css`xs`,
-	css`sm`,
-	css`md`,
-	css`lg`
+	`xxs`,
+	`xs`,
+	`sm`,
+	`md`,
+	`lg`
 ];
 
 var radiusAll = {};
 radiusSizes.map((size) => {
-  radiusAll[size] = css`border-radius: var(--rd-${size});`;
+  radiusAll[size] = `border-radius: var(--rd-${size});`;
 });
 
 
 
 var sizes = [
-	css`50`,
-	css`xxs`,
-	css`xs`,
-	css`sm`,
-	css`md`,
-	css`lg`,
-	css`xlg`,
-	css`xxlg`,
-	css`xxxlg`
+	`50`,
+	`xxs`,
+	`xs`,
+	`sm`,
+	`md`,
+	`lg`,
+	`xlg`,
+	`xxlg`,
+	`xxxlg`
 ];
 
 var marginAll = {};
 sizes.map((size) => {
-  marginAll[size] = css`margin: var(--size-${size});`;
+  marginAll[size] = `margin: var(--size-${size});`;
 });
 
 var marginTop = {};
 sizes.map((size) => {
-  marginTop[size] = css`margin-top: var(--size-${size});`;
+  marginTop[size] = `margin-top: var(--size-${size});`;
 });
 
 var marginBot = {};
 sizes.map((size) => {
-  marginBot[size] = css`margin-bottom: var(--size-${size});`;
+  marginBot[size] = `margin-bottom: var(--size-${size});`;
 });
 
 var marginLeft = {};
 sizes.map((size) => {
-  marginLeft[size] = css`margin-left: var(--size-${size});`;
+  marginLeft[size] = `margin-left: var(--size-${size});`;
 });
 
 var marginRight = {};
 sizes.map((size) => {
-  marginRight[size] = css`margin-right: var(--size-${size});`;
+  marginRight[size] = `margin-right: var(--size-${size});`;
 });
 
 
 
 var paddingAll = {};
 sizes.map((size) => {
-  paddingAll[size] = css`padding: var(--size-${size});`;
+  paddingAll[size] = `padding: var(--size-${size});`;
 });
 
 var paddingTop = {};
 sizes.map((size) => {
-  paddingTop[size] = css`padding-top: var(--size-${size});`;
+  paddingTop[size] = `padding-top: var(--size-${size});`;
 });
 
 var paddingBot = {};
 sizes.map((size) => {
-  paddingBot[size] = css`padding-bottom: var(--size-${size});`;
+  paddingBot[size] = `padding-bottom: var(--size-${size});`;
 });
 
 var paddingLeft = {};
 sizes.map((size) => {
-  paddingLeft = css`padding-left: var(--size-${size});`;
+  paddingLeft = `padding-left: var(--size-${size});`;
 });
 
 var paddingRight = {};
 sizes.map((size) => {
-  paddingRight[size] = css`padding-right: var(--size-${size});`;
+  paddingRight[size] = `padding-right: var(--size-${size});`;
 });
 
 export const inkLayoutHelpers = html`
@@ -202,32 +202,32 @@ export const inkLayoutHelpers = html`
 
 
 
-const trbl = css`
+const trbl = `
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 `;
 
-const fixedTop = css`
+const fixedTop = `
 	${trbl}
 	position: fixed;
 	bottom: auto;
 `;
 
 
-const fixedView = css`
+const fixedView = `
 	${trbl}
 	position: fixed;
 	overflow-y: scroll;
 `;
 
-const relativeView = css`
+const relativeView = `
 	position: relative;
 	display: block;
 `;
 
-const absoluteView = css`
+const absoluteView = `
 	${trbl}
 	position: absolute;
 	overflow-y: scroll;
@@ -240,33 +240,33 @@ const absoluteView = css`
 
 
 
-const flx = css`
+const flx = `
 	display: flex;
 `;
 
-const flxVert = css`
+const flxVert = `
 	flex-direction: column;
 `;
 
-const flxGrow = css`
+const flxGrow = `
 	flex-grow: 1;
 `;
 
-const flxCtr = css`
+const flxCtr = `
+	${flx}
 	align-items: center;
 `;
 
-const flxCtrJustified = css`
+const flxCtrJustified = `
 	justify-content: center;
 `;
 
-const flxCtrCtr = css`
-	${flx}
+const flxCtrCtr = `
 	${flxCtr}
 	${flxCtrJustified}
 `;
 
-const inFlx = css`
+const inFlx = `
 	display: inline-flex;
 `;
 

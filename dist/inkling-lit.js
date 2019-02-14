@@ -5,6 +5,8 @@ export { inkColors } from "./ink-colors-lit.js";
 export { inkTypography } from "./ink-typography-lit.js";
 export { inkLayoutHelpers } from "./ink-layout-helpers-lit.js";
 
+export { unsafeCSS as uCSS } from "lit-element";
+
 // import { html } from "lit-html/lib/lit-extended.js";
 
 // export const inkling = html`
